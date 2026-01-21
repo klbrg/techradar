@@ -1,0 +1,105 @@
+{
+  "basePath": "/",
+  "editUrl": "https://github.com/yourusername/techradar/blob/main/radar/{release}/{id}.md",
+  "baseUrl": "",
+  "logoFile": "/logo.svg",
+  "jsFile": "",
+  "toggles": {
+    "showChart": true,
+    "showTagFilter": true,
+    "showQuadrantList": true,
+    "showEmptyRings": false
+  },
+  "sections": ["radar", "tags", "list"],
+  "colors": {
+    "foreground": "#fcf2e6",
+    "background": "#113521",
+    "highlight": "#d4a373",
+    "content": "#fff",
+    "text": "#575757",
+    "link": "#bc6c25",
+    "border": "rgba(255, 255, 255, 0.1)",
+    "tag": "rgba(255, 255, 255, 0.1)"
+  },
+  "quadrants": [
+    {
+      "id": "languages-and-frameworks",
+      "title": "Languages & Frameworks",
+      "description": "Programming languages and development frameworks essential for infrastructure and DevOps work - including Terraform, Python, Go, and configuration frameworks.",
+      "color": "#8ACDC3"
+    },
+    {
+      "id": "methods-and-patterns",
+      "title": "Methods & Patterns",
+      "description": "Development methodologies, patterns, and practices - including DevOps, GitOps, API-First, Trunk-based development, and Infrastructure as Code patterns.",
+      "color": "#C5569A"
+    },
+    {
+      "id": "platforms-and-operations",
+      "title": "Platforms & Operations",
+      "description": "Platform technologies and infrastructure - Kubernetes, container platforms, cloud foundations, service meshes, and operational platforms.",
+      "color": "#FA5F02"
+    },
+    {
+      "id": "tools",
+      "title": "Tools",
+      "description": "Concrete tools and products - CI/CD tools, monitoring solutions, security scanners, automation tools, and infrastructure management utilities.",
+      "color": "#FDC92A"
+    }
+  ],
+  "rings": [
+    {
+      "id": "adopt",
+      "title": "ADOPT",
+      "description": "Core skills - Production-ready technologies essential to master for infrastructure engineers",
+      "color": "#588157",
+      "radius": 0.5,
+      "strokeWidth": 5
+    },
+    {
+      "id": "trial",
+      "title": "TRIAL",
+      "description": "Emerging technologies - Worth starting to learn and adopt in smaller production projects",
+      "color": "#457b9d",
+      "radius": 0.69,
+      "strokeWidth": 3
+    },
+    {
+      "id": "assess",
+      "title": "ASSESS",
+      "description": "Learning opportunities - Explore and evaluate these technologies, understand what's on the horizon",
+      "color": "#bc6c25",
+      "radius": 0.85,
+      "strokeWidth": 2
+    },
+    {
+      "id": "hold",
+      "title": "HOLD",
+      "description": "Deprioritize - Consider alternatives or avoid investing significant learning time",
+      "color": "#d62828",
+      "radius": 1,
+      "strokeWidth": 0.75
+    }
+  ],
+  "flags": {
+    "new": {
+      "color": "#f1235a",
+      "title": "New",
+      "titleShort": "N",
+      "description": "New in this version"
+    },
+    "changed": {
+      "color": "#40a7d1",
+      "title": "Changed",
+      "titleShort": "C",
+      "description": "Recently changed"
+    },
+    "default": {
+      "description": "Unchanged"
+    }
+  },
+  "footer": {
+    "footerFootnote": "Inspired by ThoughtWorks Technology Radar"
+  },
+  "experimental": {}
+}
