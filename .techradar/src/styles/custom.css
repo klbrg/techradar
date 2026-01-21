@@ -32,17 +32,9 @@ body {
     line-height: 1.7;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
     font-weight: 600;
     letter-spacing: -0.02em;
-}
-
-h1 {
     color: var(--arista-white);
     border-bottom: 3px solid var(--arista-blue);
     padding-bottom: 0.5rem;
@@ -53,6 +45,8 @@ h3,
 h4,
 h5,
 h6 {
+    font-weight: 600;
+    letter-spacing: -0.02em;
     color: var(--arista-blue);
 }
 
@@ -192,6 +186,10 @@ pre code {
     color: var(--arista-white) !important;
 }
 
+.Tags_icon__xBf0h {
+    color: var(--arista-orange) !important;
+}
+
 [class*="ItemList_link"] {
     display: block;
     padding: 10px;
@@ -206,4 +204,11 @@ pre code {
         color: var(--arista-orange) !important;
         background-color: transparent !important;
     }
+}
+
+/* Hide footer */
+footer,
+[class*="Footer"],
+[class*="footer"] {
+    display: none !important;
 }

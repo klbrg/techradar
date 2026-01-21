@@ -55,7 +55,7 @@
         {
             "id": "adopt",
             "title": "ADOPT",
-            "description": "Kärnkompetenser - Produktionsklara teknologier som är essentiella att behärska för infrastructure engineers",
+            "description": "Core skills - Production-ready teknologier du måste behärska. Battle-tested och industry standard för moderna infrastructure teams.",
             "color": "#588157",
             "radius": 0.5,
             "strokeWidth": 5
@@ -63,7 +63,7 @@
         {
             "id": "trial",
             "title": "TRIAL",
-            "description": "Framväxande teknologier - Värda att börja lära sig och använda i mindre produktionsprojekt",
+            "description": "Emerging tech - Moget nog för proof-of-concepts och pilotprojekt. Dags att skaffa hands-on experience och börja bygga kompetens.",
             "color": "#457b9d",
             "radius": 0.69,
             "strokeWidth": 3
@@ -71,7 +71,7 @@
         {
             "id": "assess",
             "title": "ASSESS",
-            "description": "Lärandemöjligheter - Utforska och utvärdera dessa teknologier, förstå vad som finns på horisonten",
+            "description": "Learning opportunities - Håll koll på dessa, experimentera och evaluera. Framtidens tech du bör ha på radarn och förstå use cases för.",
             "color": "#bc6c25",
             "radius": 0.85,
             "strokeWidth": 2
@@ -79,7 +79,7 @@
         {
             "id": "hold",
             "title": "HOLD",
-            "description": "Deprioritera - Överväg alternativ eller undvik att investera betydande lärande tid",
+            "description": "Deprioritize - Legacy tech eller overengineering. Proceed with caution - investera tid i modernare alternativ istället.",
             "color": "#d62828",
             "radius": 1,
             "strokeWidth": 0.75
