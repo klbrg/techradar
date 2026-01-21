@@ -1,28 +1,34 @@
 /* Arista Networks Theme for TechRadar */
-/* Corporate colors inspired by Arista's brand identity */
+/* Based on Arista Networks official brand guidelines */
 
 :root {
-    /* Arista brand colors */
-    --arista-blue: #003087;
-    --arista-teal: #00a9ce;
-    --arista-dark: #001f3f;
-    --arista-light-blue: #4a90e2;
-    --arista-accent: #ff6b35;
-    --arista-gray: #6c757d;
-    --arista-light-gray: #e9ecef;
-    --arista-white: #ffffff;
+    /* Arista official brand colors */
+    --arista-blue: #0066CC;
+    /* Primary brand blue */
+    --arista-orange: #FF6600;
+    /* Brand accent orange */
+    --arista-navy: #002147;
+    /* Deep navy for backgrounds */
+    --arista-light-blue: #4A9EE0;
+    /* Supporting blue */
+    --arista-gray: #6B7280;
+    /* Neutral gray */
+    --arista-light-gray: #F3F4F6;
+    /* Light backgrounds */
+    --arista-white: #FFFFFF;
+    --arista-dark-text: #1F2937;
 
     /* Override default theme colors */
-    --background: var(--arista-dark);
+    --background: var(--arista-navy);
     --foreground: var(--arista-light-gray);
-    --highlight: var(--arista-teal);
+    --highlight: var(--arista-orange);
     --link: var(--arista-light-blue);
 }
 
-/* Typography - Professional and clean */
+/* Typography - Clean, professional */
 body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-    color: var(--arista-white);
+    color: #F8F9FA;
     line-height: 1.7;
 }
 
@@ -33,18 +39,25 @@ h4,
 h5,
 h6 {
     font-weight: 600;
-    color: var(--arista-teal);
     letter-spacing: -0.02em;
 }
 
 h1 {
-    color: #ffffff;
-    border-bottom: 3px solid var(--arista-teal);
+    color: var(--arista-white);
+    border-bottom: 3px solid var(--arista-blue);
     padding-bottom: 0.5rem;
 }
 
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--arista-blue);
+}
+
 h2 {
-    border-left: 4px solid var(--arista-teal);
+    border-left: 4px solid var(--arista-blue);
     padding-left: 1rem;
     margin-top: 2rem;
 }
@@ -58,8 +71,7 @@ a {
 }
 
 a:hover {
-    color: var(--arista-teal);
-    border-bottom-color: var(--arista-teal);
+    color: var(--arista-orange);
 }
 
 /* Buttons and interactive elements */
@@ -75,56 +87,40 @@ button {
 }
 
 button:hover {
-    background: var(--arista-teal);
+    background: var(--arista-orange);
     transform: translateY(-1px);
-    box-shadow: 0 4px 8px rgba(0, 169, 206, 0.2);
+    box-shadow: 0 4px 12px rgba(255, 102, 0, 0.3);
 }
 
 button:active {
     transform: translateY(0);
 }
 
-/* Tags */
-.tag,
-[class*="tag"] {
-    background: var(--arista-light-gray);
-    border: 1px solid var(--arista-teal);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.875rem;
-    font-weight: 500;
-    transition: all 0.2s ease;
-}
 
-.tag:hover,
-[class*="tag"]:hover {
-    background: var(--arista-light-gray);
-    color: #ffffff;
-    border: 1px solid #00a9ce;
-}
 
 /* Cards and containers */
 .card,
 [class*="card"] {
-    background: var(--arista-white);
-    border: 1px solid var(--arista-light-gray);
-    border-left: 4px solid var(--arista-teal);
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(0, 102, 204, 0.2);
+    border-left: 4px solid var(--arista-blue);
     border-radius: 8px;
     padding: 1.5rem;
-    box-shadow: 0 2px 4px rgba(0, 48, 135, 0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
     transition: all 0.3s ease;
 }
 
 .card:hover,
 [class*="card"]:hover {
-    box-shadow: 0 8px 16px rgba(0, 169, 206, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 102, 204, 0.3);
     transform: translateY(-2px);
+    border-left-color: var(--arista-orange);
 }
 
 /* Code blocks */
 code {
-    background: var(--arista-light-gray);
-    color: var(--arista-blue);
+    background: rgba(0, 102, 204, 0.1);
+    color: var(--arista-light-blue);
     padding: 0.2rem 0.4rem;
     border-radius: 3px;
     font-family: "Monaco", "Menlo", "Consolas", monospace;
@@ -135,17 +131,8 @@ pre code {
     display: block;
     padding: 1rem;
     overflow-x: auto;
-    border-left: 3px solid var(--arista-teal);
-}
-
-/* Accessibility - Focus states */
-a:focus,
-button:focus,
-input:focus,
-select:focus {
-    outline: 2px solid var(--arista-teal);
-    outline-offset: 2px;
-    box-shadow: 0 0 0 3px rgba(0, 169, 206, 0.2);
+    border-left: 3px solid var(--arista-orange);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 /* Smooth transitions */
@@ -183,5 +170,40 @@ select:focus {
     [class*="card"] {
         box-shadow: none;
         border: 1px solid var(--arista-gray);
+    }
+}
+
+/* Radar spacing - increase container size to prevent overlap */
+.Radar_radar__NcR3o {
+    padding: 160px 160px !important;
+}
+
+/* Remove text decoration from QuadrantLink elements */
+[class*="QuadrantLink"] {
+    text-decoration: none !important;
+}
+
+[class*="QuadrantLink"]:hover {
+    text-decoration: none !important;
+}
+
+[class*="Tags_tag__"]:hover {
+    background-color: rgba(0, 102, 204, 0.2) !important;
+    color: var(--arista-white) !important;
+}
+
+[class*="ItemList_link"] {
+    display: block;
+    padding: 10px;
+    border-radius: 6px;
+
+    &.isFadedOut {
+        opacity: 0.65;
+    }
+
+    &:hover,
+    &.isActive {
+        color: var(--arista-orange) !important;
+        background-color: transparent !important;
     }
 }
