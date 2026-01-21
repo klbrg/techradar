@@ -1,105 +1,125 @@
 {
-  "basePath": "/",
-  "editUrl": "https://github.com/yourusername/techradar/blob/main/radar/{release}/{id}.md",
-  "baseUrl": "",
-  "logoFile": "/logo.svg",
-  "jsFile": "",
-  "toggles": {
-    "showChart": true,
-    "showTagFilter": true,
-    "showQuadrantList": true,
-    "showEmptyRings": false
-  },
-  "sections": ["radar", "tags", "list"],
-  "colors": {
-    "foreground": "#fcf2e6",
-    "background": "#113521",
-    "highlight": "#d4a373",
-    "content": "#fff",
-    "text": "#575757",
-    "link": "#bc6c25",
-    "border": "rgba(255, 255, 255, 0.1)",
-    "tag": "rgba(255, 255, 255, 0.1)"
-  },
-  "quadrants": [
-    {
-      "id": "languages-and-frameworks",
-      "title": "Languages & Frameworks",
-      "description": "Programming languages and development frameworks essential for infrastructure and DevOps work - including Terraform, Python, Go, and configuration frameworks.",
-      "color": "#8ACDC3"
+    "basePath": "/",
+    "editUrl": "https://github.com/yourusername/techradar/blob/main/radar/{release}/{id}.md",
+    "baseUrl": "",
+    "logoFile": "/logo.svg",
+    "jsFile": "",
+    "toggles": {
+        "showChart": true,
+        "showTagFilter": true,
+        "showQuadrantList": true,
+        "showEmptyRings": false
     },
-    {
-      "id": "methods-and-patterns",
-      "title": "Methods & Patterns",
-      "description": "Development methodologies, patterns, and practices - including DevOps, GitOps, API-First, Trunk-based development, and Infrastructure as Code patterns.",
-      "color": "#C5569A"
+    "sections": [
+        "radar",
+        "tags",
+        "list"
+    ],
+    "colors": {
+        "foreground": "#ffffff",
+        "background": "#001f3f",
+        "highlight": "#00a9ce",
+        "content": "#ffffff",
+        "text": "#212529",
+        "link": "#003087",
+        "border": "rgba(0, 169, 206, 0.3)",
+        "tag": "rgba(0, 169, 206, 0.2)"
     },
-    {
-      "id": "platforms-and-operations",
-      "title": "Platforms & Operations",
-      "description": "Platform technologies and infrastructure - Kubernetes, container platforms, cloud foundations, service meshes, and operational platforms.",
-      "color": "#FA5F02"
+    "quadrants": [
+        {
+            "id": "languages-and-frameworks",
+            "title": "Languages & Frameworks",
+            "description": "Programming languages and development frameworks essential for infrastructure and DevOps work - including Terraform, Python, Go, and configuration frameworks.",
+            "color": "#4dd0e1"
+        },
+        {
+            "id": "methods-and-patterns",
+            "title": "Methods & Patterns",
+            "description": "Development methodologies, patterns, and practices - including DevOps, GitOps, API-First, Trunk-based development, and Infrastructure as Code patterns.",
+            "color": "#7e57c2"
+        },
+        {
+            "id": "platforms-and-operations",
+            "title": "Platforms & Operations",
+            "description": "Platform technologies and infrastructure - Kubernetes, container platforms, cloud foundations, service meshes, and operational platforms.",
+            "color": "#ff7043"
+        },
+        {
+            "id": "tools",
+            "title": "Tools",
+            "description": "Concrete tools and products - CI/CD tools, monitoring solutions, security scanners, automation tools, and infrastructure management utilities.",
+            "color": "#ffa726"
+        }
+    ],
+    "rings": [
+        {
+            "id": "adopt",
+            "title": "ADOPT",
+            "description": "Core skills - Production-ready technologies essential to master for infrastructure engineers",
+            "color": "#588157",
+            "radius": 0.5,
+            "strokeWidth": 5
+        },
+        {
+            "id": "trial",
+            "title": "TRIAL",
+            "description": "Emerging technologies - Worth starting to learn and adopt in smaller production projects",
+            "color": "#457b9d",
+            "radius": 0.69,
+            "strokeWidth": 3
+        },
+        {
+            "id": "assess",
+            "title": "ASSESS",
+            "description": "Learning opportunities - Explore and evaluate these technologies, understand what's on the horizon",
+            "color": "#bc6c25",
+            "radius": 0.85,
+            "strokeWidth": 2
+        },
+        {
+            "id": "hold",
+            "title": "HOLD",
+            "description": "Deprioritize - Consider alternatives or avoid investing significant learning time",
+            "color": "#d62828",
+            "radius": 1,
+            "strokeWidth": 0.75
+        }
+    ],
+    "flags": {
+        "new": {
+            "color": "#f1235a",
+            "title": "New",
+            "titleShort": "N",
+            "description": "New in this version"
+        },
+        "changed": {
+            "color": "#40a7d1",
+            "title": "Changed",
+            "titleShort": "C",
+            "description": "Recently changed"
+        },
+        "default": {
+            "description": "Unchanged"
+        }
     },
-    {
-      "id": "tools",
-      "title": "Tools",
-      "description": "Concrete tools and products - CI/CD tools, monitoring solutions, security scanners, automation tools, and infrastructure management utilities.",
-      "color": "#FDC92A"
-    }
-  ],
-  "rings": [
-    {
-      "id": "adopt",
-      "title": "ADOPT",
-      "description": "Core skills - Production-ready technologies essential to master for infrastructure engineers",
-      "color": "#588157",
-      "radius": 0.5,
-      "strokeWidth": 5
+    "footer": {
+        "footerFootnote": "Inspired by ThoughtWorks Technology Radar"
     },
-    {
-      "id": "trial",
-      "title": "TRIAL",
-      "description": "Emerging technologies - Worth starting to learn and adopt in smaller production projects",
-      "color": "#457b9d",
-      "radius": 0.69,
-      "strokeWidth": 3
+    "headerTitle": "Om techradar.se",
+    "labels": {
+        "title": "techradar.se",
+        "quadrant": "Quadrant",
+        "quadrantOverview": "Quadrant Overview",
+        "zoomIn": "Zoom in",
+        "filterByTag": "Filter by Tag",
+        "footer": "techradar.se helps infrastructure engineers navigate the technology landscape and focus their learning on what matters most.",
+        "notUpdated": "This item was not updated in the last three versions of the Radar. While it may still be relevant, please consider that technology moves fast and our current evaluation might differ.",
+        "notFound": "404 - Page not found",
+        "pageAbout": "Om techradar.se",
+        "pageOverview": "Technologies Overview",
+        "pageSearch": "Search",
+        "searchPlaceholder": "What are you looking for?",
+        "metaDescription": "Stay at the forefront of infrastructure engineering and DevOps with techradar.se. Explore insights on Kubernetes, Terraform, GitOps, monitoring tools and more."
     },
-    {
-      "id": "assess",
-      "title": "ASSESS",
-      "description": "Learning opportunities - Explore and evaluate these technologies, understand what's on the horizon",
-      "color": "#bc6c25",
-      "radius": 0.85,
-      "strokeWidth": 2
-    },
-    {
-      "id": "hold",
-      "title": "HOLD",
-      "description": "Deprioritize - Consider alternatives or avoid investing significant learning time",
-      "color": "#d62828",
-      "radius": 1,
-      "strokeWidth": 0.75
-    }
-  ],
-  "flags": {
-    "new": {
-      "color": "#f1235a",
-      "title": "New",
-      "titleShort": "N",
-      "description": "New in this version"
-    },
-    "changed": {
-      "color": "#40a7d1",
-      "title": "Changed",
-      "titleShort": "C",
-      "description": "Recently changed"
-    },
-    "default": {
-      "description": "Unchanged"
-    }
-  },
-  "footer": {
-    "footerFootnote": "Inspired by ThoughtWorks Technology Radar"
-  },
-  "experimental": {}
+    "experimental": {}
 }

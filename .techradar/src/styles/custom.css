@@ -1,2 +1,187 @@
-/* Use this file to optionally override global css styles and use with caution. */
-/* See README.md for hints and examples: https://github.com/AOEpeople/aoe_technology_radar/ */
+/* Arista Networks Theme for TechRadar */
+/* Corporate colors inspired by Arista's brand identity */
+
+:root {
+    /* Arista brand colors */
+    --arista-blue: #003087;
+    --arista-teal: #00a9ce;
+    --arista-dark: #001f3f;
+    --arista-light-blue: #4a90e2;
+    --arista-accent: #ff6b35;
+    --arista-gray: #6c757d;
+    --arista-light-gray: #e9ecef;
+    --arista-white: #ffffff;
+
+    /* Override default theme colors */
+    --background: var(--arista-dark);
+    --foreground: var(--arista-light-gray);
+    --highlight: var(--arista-teal);
+    --link: var(--arista-light-blue);
+}
+
+/* Typography - Professional and clean */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: var(--arista-white);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--arista-teal);
+    letter-spacing: -0.02em;
+}
+
+h1 {
+    color: #ffffff;
+    border-bottom: 3px solid var(--arista-teal);
+    padding-bottom: 0.5rem;
+}
+
+h2 {
+    border-left: 4px solid var(--arista-teal);
+    padding-left: 1rem;
+    margin-top: 2rem;
+}
+
+/* Links */
+a {
+    color: var(--arista-light-blue);
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 1px solid transparent;
+}
+
+a:hover {
+    color: var(--arista-teal);
+    border-bottom-color: var(--arista-teal);
+}
+
+/* Buttons and interactive elements */
+button {
+    background: var(--arista-blue);
+    color: var(--arista-white);
+    border: none;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 500;
+    transition: all 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover {
+    background: var(--arista-teal);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(0, 169, 206, 0.2);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+/* Tags */
+.tag,
+[class*="tag"] {
+    background: var(--arista-light-gray);
+    border: 1px solid var(--arista-teal);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.tag:hover,
+[class*="tag"]:hover {
+    background: var(--arista-light-gray);
+    color: #ffffff;
+    border: 1px solid #00a9ce;
+}
+
+/* Cards and containers */
+.card,
+[class*="card"] {
+    background: var(--arista-white);
+    border: 1px solid var(--arista-light-gray);
+    border-left: 4px solid var(--arista-teal);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 48, 135, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover,
+[class*="card"]:hover {
+    box-shadow: 0 8px 16px rgba(0, 169, 206, 0.15);
+    transform: translateY(-2px);
+}
+
+/* Code blocks */
+code {
+    background: var(--arista-light-gray);
+    color: var(--arista-blue);
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: "Monaco", "Menlo", "Consolas", monospace;
+    font-size: 0.9em;
+}
+
+pre code {
+    display: block;
+    padding: 1rem;
+    overflow-x: auto;
+    border-left: 3px solid var(--arista-teal);
+}
+
+/* Accessibility - Focus states */
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 2px solid var(--arista-teal);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 3px rgba(0, 169, 206, 0.2);
+}
+
+/* Smooth transitions */
+* {
+    transition-property: background-color, border-color, color, transform, box-shadow;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+/* Responsive improvements */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        padding-left: 0.75rem;
+    }
+
+    .card,
+    [class*="card"] {
+        padding: 1rem;
+    }
+}
+
+/* Print styles */
+@media print {
+    a {
+        color: var(--arista-blue) !important;
+        text-decoration: underline;
+    }
+
+    .card,
+    [class*="card"] {
+        box-shadow: none;
+        border: 1px solid var(--arista-gray);
+    }
+}
