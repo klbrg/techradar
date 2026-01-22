@@ -17,6 +17,7 @@
     /* Light backgrounds */
     --arista-white: #FFFFFF;
     --arista-dark-text: #1F2937;
+    --max-width: 1400px;
 
     /* Override default theme colors */
     --background: var(--arista-navy);
@@ -167,10 +168,11 @@ pre code {
     }
 }
 
-/* Radar spacing - increase container size to prevent overlap */
+/* Radar spacing - increase container size to prevent overlap
 .Radar_radar__NcR3o {
     padding: 160px 160px !important;
 }
+*/
 
 /* Remove text decoration from QuadrantLink elements */
 [class*="QuadrantLink"] {
@@ -194,6 +196,8 @@ pre code {
     display: block;
     padding: 10px;
     border-radius: 6px;
+    background-color: transparent !important;
+    color: var(--arista-light-blue) !important;
 
     &.isFadedOut {
         opacity: 0.65;
@@ -211,4 +215,12 @@ footer,
 [class*="Footer"],
 [class*="footer"] {
     display: none !important;
+}
+
+[class*="ItemDetail_content__"] {
+    background-color: rgba(25, 25, 25, 0.85) !important;
+    color: var(--arista-light-blue) !important;
+    font-size: 1.2em !important;
+    border-radius: 12px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 102, 204, 0.1) !important;
 }
