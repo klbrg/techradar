@@ -17,7 +17,7 @@
     /* Light backgrounds */
     --arista-white: #FFFFFF;
     --arista-dark-text: #1F2937;
-    --max-width: 1400px;
+    --max-width: 1300px;
 
     /* Override default theme colors */
     --background: var(--arista-navy);
@@ -37,8 +37,8 @@ h1 {
     font-weight: 600;
     letter-spacing: -0.02em;
     color: var(--arista-white);
-    border-bottom: 3px solid var(--arista-blue);
-    padding-bottom: 0.5rem;
+    border-bottom: none;
+    padding-bottom: 0;
 }
 
 h2,

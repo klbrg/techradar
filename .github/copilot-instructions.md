@@ -82,7 +82,6 @@ Further reading:
 - `ring` - adopt | trial | assess | hold
 - `quadrant` - languages-and-frameworks | tools | methods-and-patterns | platforms-and-operations
 - `tags` - Array av relevanta tags för filtrering
-- `guid` - Unik UUID för teknologin (generera med uuidgen eller liknande)
 
 ### Ring Definitions
 
