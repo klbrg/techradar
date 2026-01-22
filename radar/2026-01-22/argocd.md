@@ -45,24 +45,12 @@ ArgoCD är den ledande GitOps continuous delivery-lösningen för Kubernetes. De
 - **Application Controller** - Reconciliation loop
 - **UI/CLI** - User interfaces
 
-**Deployment pattern:**
-```
-Git Repository → ArgoCD → Kubernetes Cluster(s)
-```
-
 ## Best practices
 
 **Repository structure:**
-```
-gitops-repo/
-├── applications/          # ArgoCD Application definitions
-├── base/                  # Base Kubernetes manifests
-├── overlays/
-│   ├── dev/
-│   ├── staging/
-│   └── prod/
-└── helm-values/           # Helm value files per environment
-```
+- Separera applications, base manifests, och overlays per environment
+- Helm values per environment
+- Tydlig struktur för skalbarhet
 
 **Application definitions:**
 - App-of-apps pattern för många applications
@@ -93,11 +81,6 @@ gitops-repo/
 - **Standalone** - ArgoCD per cluster
 - **Hybrid** - Combination baserat på team/environment
 
-**Cluster registration:**
-```bash
-argocd cluster add <context-name>
-```
-
 ## Integration med CI
 
 **Separation of concerns:**
@@ -127,12 +110,10 @@ argocd cluster add <context-name>
 ## Installation
 
 **Quick start:**
-```bash
-kubectl create namespace argocd
-kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml
-```
+- Install via kubectl apply med official manifests
+- Namespace: argocd
 
-**Production:**
+**Production:****
 - High availability mode (multiple replicas)
 - Redis clustering
 - Ingress med TLS
@@ -155,11 +136,11 @@ kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/st
 ## Utmaningar
 
 ⚠️ **Tänk på:**
-- Lärande kurva för GitOps-tänk
+- Anpassa miljöer efter "GitOps"
 - Secrets management kräver extra tooling
 - Large-scale (1000+ apps) kan kräva tuning
 - RBAC kan bli komplext för stora teams
-- Sync performance för very large manifests
+- Sync performance för väldigt stora manifests
 
 ## Adoption strategy
 
