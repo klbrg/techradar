@@ -52,7 +52,7 @@ Azure är den självklara cloud-plattformen för organisationer med befintliga M
 - Management groups för hierarkisk governance
 
 **Identity:**
-- Azure AD som central identity provider
+- Entra ID som central identity provider
 - Conditional Access policies
 - Managed Identities för service-to-service auth
 
