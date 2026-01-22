@@ -196,6 +196,7 @@ pre code {
     display: block;
     padding: 10px;
     border-radius: 6px;
+    font-size: 1.1rem;
     background-color: transparent !important;
     color: var(--arista-light-blue) !important;
 
@@ -220,7 +221,36 @@ footer,
 [class*="ItemDetail_content__"] {
     background-color: rgba(25, 25, 25, 0.85) !important;
     color: var(--arista-light-blue) !important;
-    font-size: 1.2em !important;
     border-radius: 12px !important;
+    padding: 30px 15px !important;
+    font-size: 0.90rem !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 102, 204, 0.1) !important;
+}
+
+[class*="ItemDetail_content__"] h1,
+[class*="ItemDetail_content__"] h2,
+[class*="ItemDetail_content__"] h3,
+[class*="ItemDetail_content__"] h4,
+[class*="ItemDetail_content__"] h5,
+[class*="ItemDetail_content__"] h6 {
+    font-size: 0.85rem !important;
+}
+
+[class*="ItemDetail_content__"] h1 {
+    font-size: 1.7rem !important;
+}
+
+[class*="ItemDetail_content__"] h2 {
+    font-size: 1.15rem !important;
+}
+
+[class*="ItemDetail_content__"] h3 {
+    font-size: 0.95rem !important;
+}
+
+.Layout_container__BVtmP {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 0px;
 }
