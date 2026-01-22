@@ -1,5 +1,5 @@
 {
-    "basePath": "/techradar",
+    "basePath": "/",
     "editUrl": "https://github.com/klbrg/techradar/blob/main/radar/{release}/{id}.md",
     "baseUrl": "",
     "logoFile": "/logo.svg",
