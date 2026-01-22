@@ -18,6 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "aoe_technology_radar": "^4.0.0",
-    "tsx": "^4.7.0"
+    "tsx": "^4.7.0",
+    "gray-matter": "^4.0.3"
   }
 }
