@@ -11,7 +11,7 @@ tags:       [devops, automation, kubernetes, ci/cd, infrastructure]
 
 ## Varför ADOPT?
 
-GitOps har blivit industry standard för modern cloud-native infrastructure management, särskilt i Kubernetes-miljöer. Det är inte längre en emerging practice utan en proven, production-ready metod som har adopterats av organisationer världen över.
+GitOps har blivit industry standard för modern cloud-native infrastructure management, särskilt i Kubernetes-miljöer. Det är inte längre en emerging practice utan en provad, produktionsredo metod som har adopterats av organisationer världen över.
 
 **Core benefits:**
 - **Declarative everything** - All infrastruktur och konfiguation som kod
@@ -29,7 +29,6 @@ GitOps har blivit industry standard för modern cloud-native infrastructure mana
 **Verktyg:**
 - **Argo CD** - Branschledande för Kubernetes, robust UI och multi-cluster support
 - **Flux** - CNCF-projekt, tight Kubernetes integration
-- **Jenkins X** - Full CI/CD pipeline med GitOps
   
 **Implementation:**
 - Börja smått, migrera en app eller ett namespace först
@@ -44,9 +43,9 @@ GitOps har blivit industry standard för modern cloud-native infrastructure mana
 - **Multi-cluster management** - Consistent deployments till olika environments
 - **Disaster recovery** - Snabb återställning från Git state
 
-## Varningar
+## Utmaningar
 
-- Kräver cultural shift - teams måste embracea Git workflows
+- Kräver cultural shift - teams behöver embracea Git workflows
 - Secret management behöver extra fokus
 - Initial setup kan vara komplex för legacy systems
 - Monitoring och observability är kritiskt för reconciliation loops

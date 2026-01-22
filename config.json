@@ -1,6 +1,6 @@
 {
     "basePath": "/",
-    "editUrl": "https://github.com/yourusername/techradar/blob/main/radar/{release}/{id}.md",
+    "editUrl": "https://github.com/klbrg/techradar/blob/main/radar/{release}/{id}.md",
     "baseUrl": "",
     "logoFile": "/logo.svg",
     "jsFile": "",
@@ -29,25 +29,25 @@
         {
             "id": "languages-and-frameworks",
             "title": "Languages & Frameworks",
-            "description": "Programmeringsspråk och frameworks för infrastruktur och DevOps - Infrastructure as Code-språk som Terraform och Ansible, scripting med Python och Go, samt configuration management-ramverk.",
+            "description": "Programmeringsspråk och ramverk för infrastructure engineering - deklarativa språk, scripting-språk och SDK:er för automation och orchestration.",
             "color": "#4dd0e1"
         },
         {
             "id": "methods-and-patterns",
             "title": "Methods & Patterns",
-            "description": "Metoder och patterns - DevOps-practices, GitOps workflows, API-first design, microservices-arkitekturer, trunk-based development och Infrastructure as Code-patterns.",
+            "description": "Metoder, patterns och best practices - DevOps-practices, deployment-strategier, arkitektur-patterns och moderna utvecklingsworkflows.",
             "color": "#7e57c2"
         },
         {
             "id": "platforms-and-operations",
             "title": "Platforms & Operations",
-            "description": "Plattforms- och infrastrukturteknologier - Container orchestration med Kubernetes, cloud platforms, service meshes, serverless-plattformar och enterprise runtime-miljöer.",
+            "description": "Plattforms- och infrastrukturteknologier - Container orchestration, cloud providers, networking, serverless-plattformar och enterprise runtime-miljöer.",
             "color": "#ff7043"
         },
         {
             "id": "tools",
             "title": "Tools",
-            "description": "Konkreta tools och produkter - CI/CD-pipelines, monitoring- och observability-lösningar, security scanners, configuration management-verktyg och infrastructure automation-tooling.",
+            "description": "Konkreta verktyg och produkter - CI/CD-pipelines, monitoring och observability, security scanning och automation-tooling.",
             "color": "#ffa726"
         }
     ],
