@@ -225,3 +225,10 @@ footer,
     font-size: 0.95rem !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 102, 204, 0.1) !important;
 }
+
+.Layout_container__BVtmP {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 15px;
+    padding-bottom: 0px;
+}
