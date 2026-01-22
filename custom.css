@@ -222,5 +222,6 @@ footer,
     color: var(--arista-light-blue) !important;
     border-radius: 12px !important;
     padding: 5px !important;
+    font-size: 0.95rem !important;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4), 0 2px 8px rgba(0, 102, 204, 0.1) !important;
 }
